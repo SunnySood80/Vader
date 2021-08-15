@@ -1,0 +1,15 @@
+<svg id="Sunny" xmlns="http://www.w3.org/2000/svg" width="82.5" height="80.844" viewBox="0 0 82.5 80.844">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffe800;
+        stroke: #f2ee77;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M37.1,90.245C20.362,78.47,15.7,56.261,26.694,40.641S60.161,21.905,76.9,33.68s21.394,33.984,10.4,49.6S53.834,102.02,37.1,90.245Z" transform="translate(-15.75 -21.531)"/>
+</svg>

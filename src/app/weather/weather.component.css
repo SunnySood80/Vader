@@ -1,0 +1,48 @@
+.middle {
+  margin: left;
+  width: 40%;
+  padding: 10px;
+  line-height: 10px;
+  font-size-adjust: auto;
+  text-overflow: clip;
+}
+.vl {
+   border-left: 6px solid white;
+   height: 250px;
+   position:absolute;
+   left: 43%;
+   bottom: 17%;
+   top: 50%;
+   padding: 4px;
+}
+
+.sun {
+  position: absolute;
+  top: 60px;
+  left: 70%;
+  transform: translate(50%);
+  width: 100px;
+  height: 100px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #FFFFFF;
+}
+
+.description {
+  position: absolute;
+  left: 48.5%;
+  bottom: 23%;
+  top: auto;
+  text-align: center;
+  font-size-adjust: auto;
+  text-overflow: ellipsis;
+  margin: auto;
+}
+.img-container {
+  height: auto;
+  width: auto;
+  position: absolute;
+  left: 48%;
+  bottom: 32%;
+  top: auto;
+}

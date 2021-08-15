@@ -1,0 +1,80 @@
+<body style="background-color:#59ABEF;">
+<div class="container">
+      <h3 class="text-center   ">
+        <font face="Arial" color="#FFFFFF" size="7px">
+          <b>
+          Väder
+          </b>
+        </font>
+      </h3>
+
+    <!--<h2>
+        <div class="sun"></div>
+    </h2>-->
+
+      <form
+        [formGroup]="weatherSearchForm"
+        (ngSubmit)="sendToAPIXU(weatherSearchForm.value)"
+
+
+      >
+        <div class="col-x-5">
+        <div class="form-group">
+          <input
+            face = "Arial"
+            class="form-control"
+            type="text"
+            id="weatherLocation"
+            aria-describedby="weatherLocation"
+            placeholder="Ex: Shawnee, Kansas "
+            formControlName="location"
+          />
+        </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success btn-md">
+            <font size="4px" face="arial" color="white" background-color="blue">
+              Find Weather
+            </font>
+          </button>
+        </div>
+      </form>
+    </div>
+      <div class="middle"><p class="text-right">
+      <font face="Helvetica" color="#FFFFFF" size="7px">
+        {{ this.weatherData?.location.name }}
+      </font>
+      </p>
+      </div>
+      <div class="middle"><h3 class="text-right">
+      <font face="Helvetica" color="#FFFFFF" size="5px">
+        {{this.weatherData.location.localtime}}
+      </font>
+      </h3>
+      </div>
+
+    <div class="img-container">
+      <img src= "{{this.icon}}">
+    </div>
+        <div class="middle">
+        <p class="text-right"> <font face="Helvetica" color="#FFFFFF" size="6px">
+        current: {{ this.weatherData?.current.temperature }}°F
+        </font>
+    </p>
+    </div>
+  <div class="middle">
+    <p class="text-right">
+     <font face="Helvetica" color="#FFFFFF" size="6px">
+        precipitation: {{ this.weatherData?.current.precip * (100)}}%
+      </font>
+      </p>
+      </div>
+      <div class="description"><p class="text-right"> <font face="Helvetica" color="FFFFFF" size="5px">
+        {{weatherData.current.weather_descriptions}}
+      </font>
+    </p>
+    </div>
+    <h2>
+      <div class="vl"></div>
+     </h2>
+</body>
